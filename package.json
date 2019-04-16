@@ -1,0 +1,26 @@
+{
+  "name": "spa2",
+  "version": "1.0.0",
+  "description": "SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangxi1998/spa2.git"
+  },
+  "author": "yangxi1998
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangxi1998/spa2/issues"
+  },
+  "homepage": "https://github.com/yangxi1998/spa2#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-htmlhint": "^0.9.13",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-eslint": "^21.0.0",
+
+  }
+}
