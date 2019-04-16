@@ -15,12 +15,5 @@
   "bugs": {
     "url": "https://github.com/yangxi1998/spa2/issues"
   },
-  "homepage": "https://github.com/yangxi1998/spa2#readme",
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-htmlhint": "^0.9.13",
-    "grunt-contrib-csslint": "^2.0.0",
-    "grunt-eslint": "^21.0.0",
-
-  }
+  "homepage": "https://github.com/yangxi1998/spa2#readme"
 }
