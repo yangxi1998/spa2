@@ -1,7 +1,7 @@
 var $dlgAbout = (function() {
     var $dlg=$(''
           + '<div class="notepad-dlg-mask notepad-dlg-about">'
-          + '<div class="dialogbox notepad-dlgbox">'
+          + '<div class="dialogbox notepad-dlgbox">'  /*指定多个class的意思，在HTML的层面上说的话，这样指定的class是同级的。同级的class需要看CSS文件的先后次序，后加载的css会覆盖前面加载的css。写到style的话因为是最后解析的所以是最高的一个优先级*/
           + '<div class="notepad-dlg-titlebar">'
           + '<p class="title">关于“记事本”</p>'
           + '<span class="close-btn">✖</span>'

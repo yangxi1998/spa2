@@ -5,28 +5,48 @@
     height: 400px;
     width: 536px;
     margin:0 auto;
-    border:1px solid;
+    border:1px solid #33CCFF;
+    user-select:none;//文本不能被选择 不能被复制
+}
+.notepad-dlg-about .notepad-dlg-titlebar{
+  //background-color:blue;
+  height:30px;
+  width:100%;
 }
 .notepad-dlg-about .title{
   float:left;
+  margin:0;
+  padding:0;
+  line-height:30px;
+  margin-left:10px;
 }
 .notepad-dlg-about .close-btn{
     float:right;
-    background-color:red;
-    margin-top:20px;
+    //background-color:red;
     margin-right:10px;
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
     text-align:center;
+    line-height:30px;
+}
+.notepad-dlg-about .close-btn:hover{
+  background-color:red;
+  cursor:pointer;
 }
 .notepad-dlg-about .main {
+  float:left;
     height: 368px;
+    background-color:#DDDDDD;
+    width:100%;
 }
 .notepad-dlg-about .main .slogan {
-    color: blue;
-    font-size: 2em;
+    color:#0088A8;
+    font-size: 4em;
     line-height: 100px;
-    margin-left:100px;
+    //background-color:red;
+    text-align:center;
+    height:30%;
+    margin:0;
 }
 .notepad-dlg-about .main .app-logo {
     margin: 30px 10px;
@@ -35,15 +55,15 @@
     display: inline-block;
     font-size: 1.2em;
     height: 100px;
-    left: 80px;
     line-height: 25px;
-    margin-left: 5px;
-
+    margin-left: 15px;
+    height:55%;
 }
 
 .notepad-dlg-about .main .btn-ok {
-    bottom: 16px;
-    position: absolute;
-    right: 12px;
+    float:right;
+    margin-right:10px;
+    width:50px;
+    height:30px;
 
 }
