@@ -20,13 +20,12 @@ var $dlgAbout = (function() {
         +'</div>');
     
   var $btnOk = $dlg.find('.btn-ok'),
-      $btnClose = $dlg.find('.close-btn'),
-      $titleBar = $dlg.find('.notepad-dlg-titlebar');
+      $btnClose = $dlg.find('.close-btn');
 
   function destory() { $dlg.remove();  }
    var show=function(){
         $('body').append($dlg);
-       $dlg.find('.dialogbox').draggable({handle: $titleBar});
+       $dlg.find('.dialogbox').draggable({handle: $dlg.find('.notepad-dlg-titlebar')});
 
        $btnOk.click(destory);
         $btnClose.click(destory);
