@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hello</title>
+  <!--外部样式-->
+  <link rel="stylesheet" href="timer-button.css">
+  <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
+  <style>
+  .main{
+     width:200px;
+     height:200px;
+     margin:0 auto;
+  }
+  </style>
+</head>
+<body>
+<div class="main1"></div>
+<div class="main2"></div>
+<input class="add-btn1" type="button" value="add timer-btn1">
+<!--<input class="add-btn2" type="button" value="add timer-btn2">-->
+
+<input class="del-btn" type="button" value="del timer-btn">
+</body>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="timer-button.js">
+</script>
+<script>
+  $(function(){
+      var $btnAdd1=$('input.add-btn1');
+        //  $btnAdd2=$('input.add-btn2'),
+ 
+          $btnDel=$('input.del-btn');
+          //两个都调用了一个对象timer，定时器等都用的一个， 解决方法：用new实例化两个对象
+          $btnAdd1.click(function(){
+            var $timer=new TimerBtn();
+            $timer.init({
+              container:'.main1',
+              title:'发送验证码',
+              time:10,
+              clickHandle:function(){alert('btn1')}
+              });
+
+          });
+          /*
+          $btnAdd2.click(function(){
+            $timer.init({
+              container:'.main2',
+              title:'确定',
+              time:10,
+              clickHandle:function(){alert('btn2')}
+              });
+              
+          });*/
+
+           $btnDel.click(function(){
+             $timer.remove(); 
+        });
+
+
+    });
+</script>
+</html>
