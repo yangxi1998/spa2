@@ -1,0 +1,49 @@
+.notepad-dlg-about {
+    z-index: 10;
+}
+.notepad-dlg-about .dialogbox {
+    height: 400px;
+    width: 536px;
+    margin:0 auto;
+    border:1px solid;
+}
+.notepad-dlg-about .title{
+  float:left;
+}
+.notepad-dlg-about .close-btn{
+    float:right;
+    background-color:red;
+    margin-top:20px;
+    margin-right:10px;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+.notepad-dlg-about .main {
+    height: 368px;
+}
+.notepad-dlg-about .main .slogan {
+    color: blue;
+    font-size: 2em;
+    line-height: 100px;
+    margin-left:100px;
+}
+.notepad-dlg-about .main .app-logo {
+    margin: 30px 10px;
+}
+.notepad-dlg-about .main .info {
+    display: inline-block;
+    font-size: 1.2em;
+    height: 100px;
+    left: 80px;
+    line-height: 25px;
+    margin-left: 5px;
+
+}
+
+.notepad-dlg-about .main .btn-ok {
+    bottom: 16px;
+    position: absolute;
+    right: 12px;
+
+}
