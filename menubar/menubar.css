@@ -1,0 +1,67 @@
+body,html{
+   margin:0;
+   padding:0;
+}
+.notepad-menubar{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:20px;
+  user-select:none;
+}
+.notepad-menubar .titles{
+  padding:0;
+  margin:0;
+}
+.notepad-menubar .menu-title{
+   display:inline-block;
+   border:1px solid white; //技巧，为了鼠标划上去不跳
+   height:20px;
+   width:54px;
+   text-align:center;
+   font-size:0.8em;
+   line-height:20px;
+}
+.notepad-menubar .menu-title:hover{
+   border:1px solid #99d1ff;
+   background-color:#cce8ff;
+}
+.notepad-menubar .menu-item{
+  display:block;
+  padding-left:12%;
+  height:22px;
+  line-height:22px;
+  width:88%;
+  position:relative;
+  font-size:0.7em;
+}
+.notepad-menubar .menu-item:hover{
+  background:#99d1ff;
+}
+.notepad-menubar .menu-hr{
+  display:block;
+  //border:1px solid #c2c2c2;
+  margin:3px 0;
+}
+.notepad-menubar .menus{
+  width:202px;
+  border:1px solid #c2c2c2;
+  background:#f2f2f2;
+  box-shadow:5px 5px 5px #f2f2f2;
+  padding:3px;
+  display:inline-block;
+  margin:0;
+}
+.notepad-menubar .disabled{
+  color:#a2a2a2;
+
+}
+.notepad-menubar .disabled:hover{
+  background-color:#c2c2c2;
+}
+.notepad-menubar .shortcut{
+  position:absolute;
+  right:20px;
+  text-align:right;
+}

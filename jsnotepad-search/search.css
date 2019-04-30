@@ -1,0 +1,85 @@
+.notepad-dlg-about {
+    z-index: 10;
+}
+.notepad-dlg-search .dialogbox {
+    height: 164px;
+    width: 414px;
+    margin:0 auto;
+    border:1px solid gray;
+    user-select:none;//文本不能被选择 不能被复制
+    font-size:16px!important;
+}
+.notepad-dlg-search .notepad-dlg-titlebar{
+  //background-color:blue;
+  height:30px;
+  width:100%;
+}
+.notepad-dlg-search .title{
+  float:left;
+  margin:0!important;
+  padding:0;
+  line-height:30px;
+  margin-left:10px;
+}
+.notepad-dlg-search .close-btn{
+    float:right;
+    //background-color:red;
+    //rgin-right:10px;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+}
+.notepad-dlg-search .close-btn:hover{
+  background-color:red;
+  cursor:pointer;
+}
+.notepad-dlg-search .main {
+    float:left;
+    height:134px;
+    background-color:#DDDDDD;
+    width:100%;
+}
+.notepad-dlg-search .main .txt-content {
+    box-sizing: border-box;
+    height: 26px;
+    margin: 10px;
+    width: 224px;
+
+  }
+
+.notepad-dlg-search .main .btn-search {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+
+  }
+
+.notepad-dlg-search .main .btn-cancel {
+     bottom: 56px;
+     position: absolute;
+     right: 8px;
+
+  }
+
+.notepad-dlg-search .main .search-direction {
+      border: 1px solid #dcdcdc;
+      box-sizing: border-box;
+      height: 52px;
+      left: 172px;
+      padding: 10px 5px;
+      position: absolute;
+      top: 64px;
+      width: 136px;
+
+}
+
+.notepad-dlg-search .main input[value="down"] {
+      margin-left: 5px;
+
+}
+
+.notepad-dlg-search .main input[value="capital-sense"] {
+      margin-top: 30px;
+
+}
